@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(75, 72, 72);
+  overflow: hidden;
+}
+
+.main-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 0 0 16px;
+}
+
+.card {
+  width: 80%;
+  height: 650px;
+  display: flex;
+  justify-content: left;
+  margin-top: 10em;
+  background-color: bisque;
+  border-radius: 16px;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  font-size: 24px;
+  list-style-type: none;
+  justify-content: left;
+  padding: 0 1em;
+}
+
+li {
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+}
+
+li.active {
+  position: relative;
+}
+
+li.active::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+li:not(.active) {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+li:not(.active):hover {
+  color: black;
+}
+
+.title {
+  padding: 1.5em 1em;
+  font-size: 32px;
+}
+
+.text {
+  padding: 3em;
+  font-size: 16px;
+}
+
+p {
+  padding: 32px;
+  line-height: 24px;
+}
+
+.poster {
+  width: 50%;
+}
+
+.s1 {
+  display: none;
+}
+
+.s1.open {
+  display: block;
+}
+
+.s2 {
+  display: none;
+}
+
+.s2.open {
+  display: block;
+}
+
+.s3 {
+  display: none;
+}
+
+.s3.open {
+  display: block;
+}
+
+.s4 {
+  display: none;
+}
+
+.s4.open {
+  display: block;
+}
+
+.description {
+  width: 80%;
+  overflow: auto;
+}
+
+.info-one {
+  display: none;
+}
+
+.info-one.open {
+  display: block;
+}
+
+.info-two {
+  display: none;
+}
+
+.info-two.open {
+  display: block;
+}
+
+.info-three {
+  display: none;
+}
+
+.info-three.open {
+  display: block;
+}
+
+.info-four {
+  display: none;
+}
+
+.info-four.open {
+  display: block;
+}
