@@ -6,7 +6,6 @@
 
 body {
   background-color: rgb(75, 72, 72);
-  overflow: hidden;
 }
 
 .main-container {
@@ -25,7 +24,7 @@ img {
   height: 650px;
   display: flex;
   justify-content: left;
-  margin-top: 10em;
+  margin-top: 20em;
   background-color: bisque;
   border-radius: 16px;
 }
@@ -43,6 +42,10 @@ li {
   cursor: pointer;
   padding: 0 16px;
   border-radius: 8px;
+}
+
+li::selection {
+  background-color: transparent;
 }
 
 li.active {
@@ -119,7 +122,7 @@ p {
 }
 
 .description {
-  width: 80%;
+  width: 100%;
   overflow: auto;
 }
 
